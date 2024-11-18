@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3: Advanced Web Development</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Interactive Web Project</h1>
+
+        <!-- Responsive Design Section -->
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+
+        <!-- Interactive Quiz Section -->
+        <h2>Simple Quiz</h2>
+        <p id="question"></p>
+        <button onclick="submitAnswer('Yes')">Yes</button>
+        <button onclick="submitAnswer('No')">No</button>
+        <p id="result"></p>
+
+        <!-- API Data Section -->
+        <h2>Random Joke</h2>
+        <p id="joke">Loading joke...</p>
+        <button onclick="getJoke()">Get Another Joke</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
